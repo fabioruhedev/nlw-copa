@@ -4,21 +4,21 @@
   --card-color-primary: #f7dd43;
   --card-border-color: #746615;
   --card-bg-color: #1d1c19;
-  --bg: url(img/bg-yellow.svg);
+  --bg: url(assets/bg-yellow.svg);
 }
 
 body.blue {
   --card-color-primary: #338af3;
   --card-border-color: #338af3;
   --card-bg-color: #202024;
-  --bg: url(img/bg-blue.svg);
+  --bg: url(assets/bg-blue.svg);
 }
 
 body.green {
   --card-color-primary: #047c3f;
   --card-border-color: #047c3f;
   --card-bg-color: #1a1f1b;
-  --bg: url(img/bg-green.svg);
+  --bg: url(assets/bg-green.svg);
 }
 
 /* ->No trecho de código a cima, por utilizar variaveis de cor, conseguimos alterar a cor das bordas dos cartões baseado na classe que queremos.
@@ -82,7 +82,10 @@ header {
   font-size: 14px;
   text-transform: uppercase;
 }
-
+#flag {
+  width: 50px;
+  height: 51px;
+}
 .card ul {
   width: 270px;
   display: flex;
@@ -113,12 +116,12 @@ ul {
 }
 
 .card ul li strong:hover,
-.card ul li img:hover {
+.card ul li assets:hover {
   transform: scale(1.1);
 }
 
 .card ul li strong,
-.card ul li img {
+.card ul li assets {
   transition: transform 1s;
 }
 
